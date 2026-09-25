@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nina Almaamary — AI Research</title>
+  <meta name="description" content="Nina Almaamary is an MSc AI student at King Saud University working on LLM retrieval, model selection, reliability, Arabic NLP, reasoning, and AI safety.">
+  <meta name="author" content="Nina Almaamary">
+  <link rel="canonical" href="https://ninam31.github.io/">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Nina Almaamary — AI Research">
+  <meta
+    property="og:description"
+    content="MSc AI student at King Saud University working across large language models, reliability, reasoning, model selection, and Arabic NLP."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ninam31.github.io/">
+  <meta property="og:image" content="https://ninam31.github.io/profile.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nina Almaamary",
+    "alternateName": "Nina Andriyanova-Almaamary",
+    "url": "https://ninam31.github.io/",
+    "image": "https://ninam31.github.io/profile.png",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "King Saud University"
+    },
+    "knowsAbout": [
+      "Large Language Models",
+      "Reasoning",
+      "AI Reliability",
+      "Model Selection",
+      "Natural Language Processing",
+      "Arabic NLP",
+      "AI Safety",
+      "Information Retrieval"
+    ],
+    "sameAs": [
+      "https://github.com/NinaM31",
+      "https://www.kaggle.com/ninamaamary",
+      "https://orcid.org/0009-0001-0936-1342",
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main>
+    <nav class="topnav">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="notes.html">Blogs</a>
+    </nav>
+
+    <header id="about" class="hero">
+      <img src="profile.png" alt="Abstract profile image for Nina Almaamary" class="profile-photo">
+
+      <div class="hero-copy">
+        <h1>Nina Almaamary</h1>
+        <p class="academic-name"><strong>Nina Andriyanova-Almaamary</strong></strong> </p>
+
+        <p class="lead">
+          I'm an MSc AI student at King Saud University interested in building reliable and useful AI systems. 
+          My work spans LLMs, reasoning, model selection, NLP, and AI safety.
+        </p>
+
+        <p class="profile-links">
+          <a href="https://github.com/NinaM31" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="https://www.kaggle.com/ninamaamary" target="_blank" rel="noopener">Kaggle</a>
+          <span>·</span>
+          <a href="https://orcid.org/0009-0001-0936-1342" target="_blank" rel="noopener">ORCID</a>
+        </p>
+      </div>
+    </header>
+
+    <section id="research">
+      <h2>Current Research Focus</h2>
+
+      <p class="research-statement">
+      I'm interested in how large language models can be made more reliable, controllable, and useful in practice. 
+      My current work explores different aspects of LLM behavior and system design, including model selection and inference-time control.
+      </p>
+
+      <div class="research-item">
+        <h3>LLM Selection & Routing</h3>
+        <p class="meta">MSc thesis</p>
+        <p>
+          Exploring how AI systems can select suitable language models for different tasks
+          from large pools of available models.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>Inference-Time Control of LLMs</h3>
+        <p class="meta">Ongoing research</p>
+        <p>
+          Studying how language models respond to instructions that require selectively
+          ignoring or forgetting information provided in context.
+        </p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <article class="publication">
+        <div class="pub-body">
+          <p class="meta">OSACT7 · LREC 2026</p>
+          <h3>MOSKA-NLP at AdabEval 2026: Feature-Enriched Ensembling for Arabic Politeness Detection</h3>
+          <p class="authors"><strong>Nina A. Andriyanova-Almaamary</strong></p>
+
+          <p>
+            A system for Arabic politeness classification that combines sentence embeddings
+            with lexical, surface-level, and auxiliary signals, followed by calibrated ensembling.
+          </p>
+
+          <div class="pub-actions">
+            <a href="https://aclanthology.org/events/osact-2026/" target="_blank">Paper</a>
+            <span>·</span>
+
+            <a href="https://github.com/NinaM31/politeness-detection-arabic" target="_blank">Code</a>
+            <span>·</span>
+
+            <a href="https://doi.org/10.63317/56vfmbyh3fsv" target="_blank">DOI</a>
+            <span>·</span>
+
+            <button class="detail-button" onclick="toggleDetail('why')">Why?</button>
+            <span>·</span>
+
+            <button class="detail-button" onclick="toggleDetail('contribution')">
+              My contribution
+            </button>
+          </div>
+
+          <div id="why" class="detail-panel">
+            Arabic politeness is not captured by lexical meaning alone. Formulaic expressions,
+            style, dialect, intent, and pragmatic signals can all matter, so I wanted to test
+            whether adding explicit signals to sentence representations could improve classification.
+          </div>
+
+          <div id="contribution" class="detail-panel">
+            I designed and implemented the system, ran the experiments, and analyzed the results. The system placed 2nd in AdabEval 2026 Subtask A.
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="projects">
+      <h2>Selected Open Source Projects</h2>
+
+      <div class="project">
+        <h3>
+          <a href="https://github.com/NinaM31/Awesome-Arabic-NLP-ANERR"
+            target="_blank" rel="noopener">
+            Awesome Arabic NLP — ANERR
+          </a>
+        </h3>
+        <p>
+          A curated and structured collection of 250+ Arabic NLP papers, surveys,
+          datasets, benchmarks, and tools.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <p>© 2026 Nina Almaamary</p>
+    </footer>
+  </main>
+
+  <script>
+function toggleDetail(id) {
+  document.getElementById(id).classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
